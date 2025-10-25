@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>101 Okey Puan Sayar</title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=CA-PUB-SENIN-KIMLIGIN"
+         crossorigin="anonymous"></script>
+
+    <style>
+        /* Tüm boşlukları kaldır */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Kaydırma çubuklarını ana sayfada engelle */
+        }
+        
+        /* Ana taşıyıcı: Dikey olarak reklam ve uygulamayı böler */
+        .app-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Ekran yüksekliği kadar */
+        }
+        
+        /* Reklam banner'ının alanı */
+        .ad-banner-top {
+            width: 100%;
+            height: 50px; /* VEYA 70px, 90px - AdSense'in istediği boyuta göre */
+            background: #f0f0f0; /* Reklam yüklenmezse diye bir arka plan */
+            text-align: center;
+            flex-shrink: 0; /* Bu alanın küçülmesini engelle */
+        }
+        
+        /* Streamlit uygulamasını gösterecek iframe alanı */
+        .app-frame {
+            flex-grow: 1; /* Kalan tüm dikey alanı kapla */
+            border: none;  /* Çerçeve kenarlığı olmasın */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <div class="ad-banner-top">
+            
+            <p style="margin:0; padding-top:15px; font-family:sans-serif; color:#777;">
+                REKLAM ALANI
+            </p>
+            
+        </div>
+
+        <iframe 
+            src="https://101puansayar.streamlit.app/?embed=true" 
+            class="app-frame">
+        </iframe>
+        
+    </div>
+
+</body>
+</html>
